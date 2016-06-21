@@ -3,7 +3,7 @@ package bruchrechner;
 /**
  * 
  * @author JNK / VP
- *
+ * test
  */
 
 public class FractMain {

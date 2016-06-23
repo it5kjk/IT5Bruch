@@ -1,8 +1,8 @@
 package bruchrechner;
 
 /**
- * 
- * @author JNK / VP
+ *
+ * @author JNK / VP.
  * test
  */
 

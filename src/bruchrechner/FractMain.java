@@ -12,7 +12,7 @@ public class FractMain {
 		// TODO Auto-generated method stub
 		
 		Fract b1 = new Fract(5,8);
-		Fract b2 = new Fract(-1,2);d
+		Fract b2 = new Fract(-1,2);
 		
 		Fract resultM = b1.mul(b2); // b1*b2
 		

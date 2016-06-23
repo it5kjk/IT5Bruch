@@ -67,8 +67,8 @@ public class Fract {
 	//subtraction
 	public Fract sub(Fract b2) {
 		Fract diff = new Fract();
-		diff.setNumerator(this.numerator - b2.denom);
-		diff.setDenom(this.denom - b2.numerator);
+		diff.setNumerator((this.numerator * b2.denom - b2.numerator * this.denom) / (this.denom - b2.denom));
+		//diff.setDenom(this.denom - b2.numerator);
 		return diff;}
 
 	//placeholder

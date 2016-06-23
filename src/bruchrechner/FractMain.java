@@ -10,7 +10,7 @@ public class FractMain {
 
 	public static void main(String[] args) {
 		Fract b1 = new Fract(1,3);
-		Fract b2 = new Fract(1,3);
+		Fract b2 = new Fract(1,8);
 
 
 		Fract resultM = b1.mul(b2); // b1*b2

@@ -1,10 +1,7 @@
 package bruchrechner;
 
 /**
- * 
  * @author JNK / VP
- * 
-
  */
 
 public class Fract {
@@ -58,5 +55,22 @@ public class Fract {
 		quot.setDenom(this.denom * b2.numerator);
 		return quot;
 	}
+
+	//addition
+	public Fract add(Fract b2) {
+		Fract sum = new Fract();
+		sum.setNumerator(this.numerator + b2.numerator);
+		sum.setDenom(this.denom + b2.denom);
+		return sum;
+	}
+
+	//subtraction
+	public Fract sub(Fract b2) {
+		Fract diff = new Fract();
+		diff.setNumerator(this.numerator - b2.denom);
+		diff.setDenom(this.denom - b2.numerator);
+		return diff;}
+
+	//placeholder
 }
 

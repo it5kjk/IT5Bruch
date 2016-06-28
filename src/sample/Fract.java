@@ -1,11 +1,11 @@
 package sample;
-//Bruchrechner by VP/JNK
-//Erstellung der Klasse "Fract" und Zuweisung von Attributen
+//fraction calculator by VP/JNK
+//initializing of Fract class and assigning of attributes
 public class Fract
 {
     int zDenominator,zNumerator;
 
-    public Fract(int pNumerator,int pDenominator) //Bruch immer im Format Fract(Zaehler,Nenner)
+    public Fract(int pNumerator,int pDenominator) //format of fraction is (numerator, denominator)
     {   zNumerator = pNumerator;
         zDenominator = pDenominator;
     }
@@ -13,15 +13,15 @@ public class Fract
     public int numerator()
     {
         return zNumerator;
-    } // getter - Funktion um Zaehler auszugeben
+    } // getter - function to output numerator
 
     public int denominator()
     {
         return zDenominator;
-    } //getter - Funktion um Nenner auszugeben
+    } //getter - function to output denominator
 
-
-    private int ggt(int number1, int number2) // Funktion um den Kehrwert zu ermitteln
+    //function to compute greatest common divisor with Euklid formula
+    private int ggt(int number1, int number2) 
     {
         int number3 = 0;
         while (number2 != 0)
@@ -33,7 +33,7 @@ public class Fract
         return number1;
     }
 
-    public void shorten()    // setter - Methode zum Kürzen des Bruchs
+    public void shorten()    // setter - method for shortening fractions
     {
         int ggt = ggt(zNumerator,zDenominator);
         zDenominator /= ggt;

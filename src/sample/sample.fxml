@@ -12,14 +12,14 @@
             <buttons>
                 <Button fx:id="plusbutton" mnemonicParsing="false" onMouseClicked="#add" prefHeight="26.0" prefWidth="127.0" text="Add" />
                 <Button fx:id="minusbutton"  layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#subtract" text="Subtract" />
-                <Button fx:id="malbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#divide" text="Divide" />
-                <Button fx:id="teilbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#multiply" text="Multiply" />
+                <Button fx:id="multbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#divide" text="Divide" />
+                <Button fx:id="divbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#multiply" text="Multiply" />
             </buttons>
         </ButtonBar>
-        <TextField fx:id="zaehler1" layoutX="84.0" layoutY="84.0" text="" />
-        <TextField fx:id="nenner1" layoutX="84.0" layoutY="119.0" text="" />
-        <TextField fx:id="zaehler2" layoutX="373.0" layoutY="84.0" text="" />
-        <TextField fx:id="nenner2" layoutX="373.0" layoutY="119.0" text="" />
+        <TextField fx:id="numerator1" layoutX="84.0" layoutY="84.0" text="" />
+        <TextField fx:id="denominator1" layoutX="84.0" layoutY="119.0" text="" />
+        <TextField fx:id="numerator2" layoutX="373.0" layoutY="84.0" text="" />
+        <TextField fx:id="denominator2" layoutX="373.0" layoutY="119.0" text="" />
         <Label fx:id="result" layoutX="100.0" layoutY="275.0" text="The result is:" />
         <Label layoutX="441.0" layoutY="45.0" text="Fraction2" />
         <Label layoutX="31.0" layoutY="89.0" text="Numerator" />

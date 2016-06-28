@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 //controller class is defined
 public class Controller {
 
-    //Erstellung von von Objekten (names are identical to the fx:id's in the GUI style file - sample.fxml)
+    //declaration of GUI objects (names are identical to the fx:id's in the GUI style file - sample.fxml)
     public TextField numerator1 = new TextField("1");
     public TextField denominator1 = new TextField("1");
     public TextField numerator2 = new TextField("1");
@@ -17,11 +17,11 @@ public class Controller {
     public TextField resultN;
     public Label resultDeci;
     public Button minusbutton;
-    public Button malbutton;
-    public Button teilbutton;
+    public Button multbutton;
+    public Button divbutton;
     public Button plusbutton;
 
-    //Funktion zum Erfassen des Inhalts der Textfelder - GETTER
+    //function to read content of text fields - GETTER
 
     public int input1(){
         int Input1 = Integer.parseInt(numerator1.getText());
@@ -40,13 +40,13 @@ public class Controller {
         return Input4;
     }
 
-    //Methode die beim Event "onMouseClicked" auf Button Addieren ausgeführt wird
+    //method called by "onMouseClicked" event of "add" button
     public void add(Event event) {
-        Fract fr1 = new Fract(input1(), input2()); //Erstellung des ersten Bruchs
-        Fract fr2 = new Fract(input3(), input4()); //Erstellung des zweiten Bruchs
-        FractCalc Add = new FractCalc(); //Neues Objekt aus der Klasse FractCalc wird erstellt
-        int z1 = Add.sum(fr1,fr2).numerator(); // Objekt "Add" wird mit der Funktion "Summe" berechnet - Zähler
-        int n2 = Add.sum(fr1,fr2).denominator(); // Das selbe wie oben nur für den Nenner
+        Fract fr1 = new Fract(input1(), input2()); //first fraction is read
+        Fract fr2 = new Fract(input3(), input4()); //second fraction is read
+        FractCalc Add = new FractCalc(); //new object of FractCalc class is created
+        int z1 = Add.sum(fr1,fr2).numerator(); //numerator of "Add" object is computed by the sum function
+        int n2 = Add.sum(fr1,fr2).denominator(); //the same applies to the denominator
     //output of the result
         result.setText("result of addition: ");
         showResult(z1,n2);
@@ -89,7 +89,7 @@ public class Controller {
         resultDeci.setText("in decimal: " + (double)z1 / n2);
     }
     
-    //Method to handle negative results
+    //mMethod to handle negative results
 	private void showResult(int z1, int n2) {
 		if (n2 < 0){
         	resultZ.setText("" + (-1*z1) );

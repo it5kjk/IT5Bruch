@@ -6,31 +6,31 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="345.0" maxWidth="700" minHeight="345.0" minWidth="590.0" prefHeight="345.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="345.0" maxWidth="700" minHeight="345.0" minWidth="590.0" prefHeight="345.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
         <ButtonBar layoutX="66.0" layoutY="167.0" prefHeight="58.0" prefWidth="474.0">
             <buttons>
                 <Button fx:id="plusbutton" mnemonicParsing="false" onMouseClicked="#add" prefHeight="26.0" prefWidth="127.0" text="Add" />
-                <Button fx:id="minusbutton"  layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#subtract" text="Subtract" />
+                <Button fx:id="minusbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#subtract" text="Subtract" />
                 <Button fx:id="multbutton" layoutX="125.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#divide" text="Divide" />
-                <Button fx:id="divbutton"  layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#multiply" text="Multiply" />
+                <Button fx:id="divbutton" layoutX="220.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#multiply" text="Multiply" />
             </buttons>
         </ButtonBar>
-        <TextField fx:id="numerator1" layoutX="84.0" layoutY="84.0" text="" />
-        <TextField fx:id="denominator1" layoutX="84.0" layoutY="119.0" text="" />
-        <TextField fx:id="numerator2" layoutX="373.0" layoutY="84.0" text="" />
-        <TextField fx:id="denominator2" layoutX="373.0" layoutY="119.0" text="" />
+        <TextField fx:id="numerator1" layoutX="119.0" layoutY="84.0" prefHeight="26.0" prefWidth="135.0" text="" />
+        <TextField fx:id="denominator1" layoutX="119.0" layoutY="119.0" prefHeight="26.0" prefWidth="135.0" text="" />
+        <TextField fx:id="numerator2" layoutX="418.0" layoutY="84.0" prefHeight="26.0" prefWidth="125.0" text="" />
+        <TextField fx:id="denominator2" layoutX="418.0" layoutY="119.0" prefHeight="26.0" prefWidth="125.0" text="" />
         <Label fx:id="result" layoutX="100.0" layoutY="275.0" text="The result is:" />
-        <Label layoutX="441.0" layoutY="45.0" text="Fraction2" />
+        <Label layoutX="442.0" layoutY="53.0" text="Fraction" />
         <Label layoutX="31.0" layoutY="89.0" text="Numerator" />
         <Label layoutX="31.0" layoutY="124.0" text="Denominator" />
         <Label layoutX="323.0" layoutY="89.0" text="Numerator" />
         <Label layoutX="323.0" layoutY="124.0" text="Denominator" />
-        <Label layoutX="104.0" layoutY="45.0" text="Fraction1" />
+        <Label layoutX="141.0" layoutY="53.0" text="Fraction" />
       <TextField fx:id="resultZ" layoutX="273.0" layoutY="271.0" prefHeight="26.0" prefWidth="40.0" text="" />
       <TextField fx:id="resultN" layoutX="273.0" layoutY="303.0" prefHeight="26.0" prefWidth="40.0" text="" />
       <Label fx:id="resultDeci" layoutX="354.0" layoutY="275.0" prefHeight="16.0" prefWidth="192.0" text="in decimal:" />
-      
+        <Label layoutX="197.0" layoutY="26.0" prefHeight="16.0" prefWidth="192.0" text="Calculator by JNK and Vladi" />
       <Label layoutX="274.0" layoutY="230.0" prefHeight="127.0" prefWidth="84.0" text="______" />
     </children>
 </Pane>

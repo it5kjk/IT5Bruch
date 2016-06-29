@@ -27,9 +27,10 @@
         <Label layoutX="323.0" layoutY="89.0" text="Numerator" />
         <Label layoutX="323.0" layoutY="124.0" text="Denominator" />
         <Label layoutX="104.0" layoutY="45.0" text="Fraction1" />
-      <TextField fx:id="resultZ" layoutX="273.0" layoutY="271.0" prefHeight="26.0" prefWidth="55.0" text="0" />
-      <TextField fx:id="resultN" layoutX="273.0" layoutY="303.0" prefHeight="26.0" prefWidth="55.0" text="0" />
+      <TextField fx:id="resultZ" layoutX="273.0" layoutY="271.0" prefHeight="26.0" prefWidth="40.0" text="" />
+      <TextField fx:id="resultN" layoutX="273.0" layoutY="303.0" prefHeight="26.0" prefWidth="40.0" text="" />
       <Label fx:id="resultDeci" layoutX="354.0" layoutY="275.0" prefHeight="16.0" prefWidth="192.0" text="in decimal:" />
-      <Label layoutX="274.0" layoutY="228.0" prefHeight="127.0" prefWidth="84.0" text="________" />
+      
+      <Label layoutX="274.0" layoutY="230.0" prefHeight="127.0" prefWidth="84.0" text="______" />
     </children>
 </Pane>

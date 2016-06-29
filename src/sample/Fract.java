@@ -21,7 +21,7 @@ public class Fract
     } //getter - function to output denominator
 
     //function to compute greatest common divisor with Euklid formula
-    private int ggt(int number1, int number2) 
+    private int gcd(int number1, int number2) 
     {
         int number3 = 0;
         while (number2 != 0)
@@ -33,10 +33,10 @@ public class Fract
         return number1;
     }
 
-    public void shorten()    // setter - method for shortening fractions
+    public void shorten()    //setter - method for shortening fractions
     {
-        int ggt = ggt(zNumerator,zDenominator);
-        zDenominator /= ggt;
-        zNumerator /= ggt;
+        int gcd = gcd(zNumerator,zDenominator);
+        zDenominator /= gcd;
+        zNumerator /= gcd;
     }
 }
